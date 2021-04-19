@@ -5,18 +5,20 @@ def existe(nomearq):
 	try:
 		file = open(nomearq, "rt")
 	except:
-		print("Arquivo não existe!")
+		foundfile = False
 		return foundfile
 	else:
 		foundfile = True
 		return foundfile
 def criar(nomearq):
+	file1 = False
 	try:
 		file = open(nomearq, "wt+")
 	except:
-		print("Erro ao criar o arquivo!")
+		print("\033[91mErro ao criar o arquivo!\033[m")
 	else:
-		print("Arquivo de senha criado!")
+		file1 = True
+		return file1
 def adicionar(nomearq,password):
 	try:
 		file = open(nomearq, "at")
@@ -25,7 +27,7 @@ def adicionar(nomearq,password):
 	else:
 		try:
 			file.write("{}\n".format(password))
-		except Exception as Error:
-			print(Error)
+		except:
+			print("\033[91mErro ao abrir arquivo\033[m")
 		else:
 			pass
