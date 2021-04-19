@@ -1,9 +1,8 @@
 # criador de senhas em python
-
+# by: lucas-DK 
 import sys
 import os
 import time
-import re
 import funcoes
 from dados import *
 
@@ -68,6 +67,7 @@ Menu
 			palavra_aleatoria_para_senhas = dadoos
 
 			if userop == "A":
+				quantidade_senhas_geradas = 0
 				print("\033[31mGerando as suas senhas...\033[m\n")
 				for z in palavra_para_senhas:
 					quantidade_senhas_geradas += 1
@@ -80,6 +80,7 @@ Menu
 				print("\033[31mGerando as suas senhas...\033[m")
 				for x in palavra_para_senhas:
 					for z in palavra_para_senhas:
+						quantidade_senhas_geradas += 1
 						armazenar = x+z
 						funcoes.adicionar(nomearq=arquivo,password=armazenar)
 				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
