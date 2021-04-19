@@ -36,20 +36,22 @@ if len(logar) == 2:
  | |_) | (_| \__ \__ \\ V  V / (_) | | | (_| |
  | .__/ \__,_|___/___/ \_/\_/ \___/|_|  \__,_|
  |_|\033[m
+                versão 1.0
 
-	versão 1.0
-	coded by -> Lucas Walker
-	Meu github: https://github.com/lucas-Dk
+coded by: lucas-DK
+Meu github: https://github.com/lucas-Dk
 
-\033[1m================================== Menu ==================================\033[m
-\033[91m[\033[m\033[32mA\033[m\033[91m]\033[m - Gerar senhas com 1 sílaba
-\033[91m[\033[m\033[32mB\033[m\033[91m]\033[m - Gerar senhas com 2 sílabas 
-\033[91m[\033[m\033[32mC\033[m\033[91m]\033[m - Gerar senhas com 4 sílabas
-\033[91m[\033[m\033[32mD\033[m\033[91m]\033[m - Gerar senhas com 6 sílabas 
-\033[91m[\033[m\033[32mE\033[m\033[91m]\033[m - Gerar senhas com 8 sílabas 
-\033[91m[\033[m\033[32mF\033[m\033[91m]\033[m - Gerar senhas aleatorias
+
+MENU
+
+\033[91m[\033[m\033[32mA\033[m\033[91m]\033[m - Gerar senhas com 1 sílaba \033[92m[RÁPIDO]\033[m
+\033[91m[\033[m\033[32mB\033[m\033[91m]\033[m - Gerar senhas com 2 sílabas \033[92m[RÁPIDO]\033[m
+\033[91m[\033[m\033[32mC\033[m\033[91m]\033[m - Gerar senhas com 4 sílabas \033[93m[LENTO]\033[m
+\033[91m[\033[m\033[32mD\033[m\033[91m]\033[m - Gerar senhas com 6 sílabas \033[93m[LENTO]\033[m
+\033[91m[\033[m\033[32mE\033[m\033[91m]\033[m - Gerar senhas com 8 sílabas \033[91m[MUITO LENTO]\033[m
+\033[91m[\033[m\033[32mF\033[m\033[91m]\033[m - Gerar senhas aleatorias \033[91m[MUITO LENTO]\033[m
 \033[91m[\033[m\033[32mX\033[m\033[91m]\033[m - Fechar programa
-\033[1m==========================================================================\033[m
+
 			""")
 		try:
 			userop = str(input("O que você deseja: ")).upper()[0]
