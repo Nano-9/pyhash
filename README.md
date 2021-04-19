@@ -5,9 +5,9 @@
 
 > Como usar?
 
-git clone https://github.com/lucas-Dk/geradorsenhas
+- git clone https://github.com/lucas-Dk/geradorsenhas
 
-python gerador.py wordlist.txt
+- python gerador.py wordlist.txt
 
 - No lugar de wordlist.txt você pode escolher o nome do arquivo
 - Desde que o mesmo tenha a extensão .txt
