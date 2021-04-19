@@ -1,1 +1,20 @@
 # geradorsenhas
+
+> Script para gerar senhas
+- Gera milhões de senhas levando em conta as sílabas desejadas
+
+> Como usar?
+
+git clone + link desse meu repositório
+
+python gerador.py wordlist.txt
+
+- No lugar de wordlist.txt você pod escolher o nome do arquivo
+- Desde que o mesmo tenha a extensão .txt
+
+> Onde fica armazenado as senhas geradas?
+
+- As senhas geradas ficam armazenadas no arquivo de texto que você
+- Indicar para ser criado!
+
+> By: lucas-DK
