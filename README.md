@@ -5,11 +5,11 @@
 
 > Como usar?
 
-git clone + link desse meu repositório
+git clone https://github.com/lucas-Dk/geradorsenhas
 
 python gerador.py wordlist.txt
 
-- No lugar de wordlist.txt você pod escolher o nome do arquivo
+- No lugar de wordlist.txt você pode escolher o nome do arquivo
 - Desde que o mesmo tenha a extensão .txt
 
 > Onde fica armazenado as senhas geradas?
