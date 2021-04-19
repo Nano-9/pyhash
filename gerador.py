@@ -39,8 +39,9 @@ if len(logar) == 2:
 
 	versão 1.0
 	coded by -> Lucas Walker
+	Meu github: https://github.com/lucas-Dk
 
-Menu
+\033[1m================================== Menu ==================================\033[m
 \033[91m[\033[m\033[32mA\033[m\033[91m]\033[m - Gerar senhas com 1 sílaba
 \033[91m[\033[m\033[32mB\033[m\033[91m]\033[m - Gerar senhas com 2 sílabas 
 \033[91m[\033[m\033[32mC\033[m\033[91m]\033[m - Gerar senhas com 4 sílabas
@@ -48,6 +49,7 @@ Menu
 \033[91m[\033[m\033[32mE\033[m\033[91m]\033[m - Gerar senhas com 8 sílabas 
 \033[91m[\033[m\033[32mF\033[m\033[91m]\033[m - Gerar senhas aleatorias
 \033[91m[\033[m\033[32mX\033[m\033[91m]\033[m - Fechar programa
+\033[1m==========================================================================\033[m
 			""")
 		try:
 			userop = str(input("O que você deseja: ")).upper()[0]
@@ -73,8 +75,8 @@ Menu
 					quantidade_senhas_geradas += 1
 					armazenar = z
 					funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
-				
+				print("\033[32mStatus do arquivo \033[35m{}\033[m: \033[32mCRIADO\033[m".format(arquivo))
+				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
 			elif userop == "B":
 				print("\033[31mGerando as suas senhas...\033[m")
@@ -83,8 +85,8 @@ Menu
 						quantidade_senhas_geradas += 1
 						armazenar = x+z
 						funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
-				
+				print("\033[32mStatus do arquivo \033[35m{}\033[m: \033[32mCRIADO\033[m".format(arquivo))
+				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
 			elif userop == "C":
 				print("\033[31mGerando as suas senhas, este processo pode demorar um pouco...\033[m\n")
@@ -95,8 +97,9 @@ Menu
 								quantidade_senhas_geradas += 1
 								armazenar = x+z+a+b
 								funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
-
+				print("\033[32mStatus do arquivo \033[35m{}\033[m: \033[32mCRIADO\033[m".format(arquivo))
+				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+				
 			elif userop == "D":
 				print("\033[31mGerando as suas senhas, este processo pode demorar...\033[m\n")	
 				for x in palavra_para_senhas:
@@ -108,8 +111,9 @@ Menu
 										quantidade_senhas_geradas += 1
 										armazenar = x+z+a+b+c+d
 										funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
-
+				print("\033[32mStatus do arquivo \033[35m{}\033[m: \033[32mCRIADO\033[m".format(arquivo))
+				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+				
 			elif userop == "E":
 				print("\033[31mGerando as suas senhas, este processo pode demorar...\033[m\n")
 				for x in palavra_para_senhas:
@@ -123,12 +127,12 @@ Menu
 												quantidade_senhas_geradas += 1
 												armazenar = x+z+a+b+c+d+e+f
 												funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
-
+				print("\033[32mStatus do arquivo \033[35m{}\033[m: \033[32mCRIADO\033[m".format(arquivo))
+				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+				
 			elif userop == "F":
-				print("\033[31m[ATENÇÃO]: Essa função por padrão, gera senhas com 6 caracteres!\033[m")
+				print("\033[31m[ATENÇÃO]: Por padrão, gera senhas com 6 caracteres!\033[m")
 				time.sleep(1.4)
-				os.system("clear")
 				print("\033[31mGerando as suas senhas, este processo pode demorar...\033[m\n")
 				for x in palavra_aleatoria_para_senhas:
 					for z in palavra_aleatoria_para_senhas:
@@ -139,7 +143,8 @@ Menu
 										quantidade_senhas_geradas += 1
 										armazenar = x+z+a+b+c+d
 										funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32mSeu arquivo >>>\033[m \033[35m{}\033[m \033[32m<<< foi criado e contém {} senhas!\033[m".format(arquivo,quantidade_senhas_geradas))
+				print("\033[32mStatus do arquivo \033[35m{}\033[m: \033[32mCRIADO\033[m".format(arquivo))
+				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 	else:
 		print("A extensão do arquivo não é permitida!")
 else:
