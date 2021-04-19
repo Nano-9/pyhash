@@ -47,7 +47,7 @@ MENU
 \033[91m[\033[m\033[32mA\033[m\033[91m]\033[m - Gerar senhas com 1 sílaba  \033[92m[RÁPIDO]\033[m
 \033[91m[\033[m\033[32mB\033[m\033[91m]\033[m - Gerar senhas com 2 sílabas \033[92m[RÁPIDO]\033[m
 \033[91m[\033[m\033[32mC\033[m\033[91m]\033[m - Gerar senhas com 4 sílabas \033[93m[LENTO]\033[m
-\033[91m[\033[m\033[32mD\033[m\033[91m]\033[m - Gerar senhas com 6 sílabas \033[93m[LENTO]\033[m
+\033[91m[\033[m\033[32mD\033[m\033[91m]\033[m - Gerar senhas com 6 sílabas \033[91m[MUITO LENTO]\033[m
 \033[91m[\033[m\033[32mE\033[m\033[91m]\033[m - Gerar senhas com 8 sílabas \033[91m[MUITO LENTO]\033[m
 \033[91m[\033[m\033[32mF\033[m\033[91m]\033[m - Gerar senhas aleatorias    \033[91m[MUITO LENTO]\033[m
 \033[91m[\033[m\033[32mX\033[m\033[91m]\033[m - Fechar programa
