@@ -2,14 +2,7 @@
 
 import datetime
 
-
-def data_abertura_programa_principal():
-	"""
-	data : Armazena a hora certa que o arquivo foi aberto
-	pelo usuário
-	"""
-	data = datetime.datetime.now().time()
-
+data = str(datetime.datetime.now().time())
 
 def adicionar_dados_ao_arquivo(name,dados):
 	"""
