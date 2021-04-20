@@ -50,7 +50,7 @@ if len(logar) == 2:
 		arquivolog.adicionar_dados_ao_arquivo(name=logfile,dados=dadoslog)
 
 		print("\033[92m[+] Extensão de arquivo válida!\033[m")
-		time.sleep(1.3)
+		time.sleep(5)
 		os.system("clear")
 		print("""\033[94m
  _______  __   __  __   __  _______  _______  __   __ 
