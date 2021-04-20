@@ -4,6 +4,7 @@ import sys
 import os
 import time
 import funcoes
+import arquivolog
 from dados import *
 
 # programa principal
@@ -15,6 +16,7 @@ if len(logar) == 2:
 	opcoes_validas = list("ABCDEFX")
 	valido = False
 	arquivo = sys.argv[1]
+	logfile = "DadosLogin.txt"
 
 	print("\033[1;31m[+] Verificando se a extensão do arquivo está correta...\033[m")
 	time.sleep(2.5)
@@ -37,10 +39,18 @@ if len(logar) == 2:
 			print("\n\033[1;91m[+] Deletando mensagem....\033[m")
 			time.sleep(1.3)
 			os.system("clear")
+		if not funcoes.existe(logfile):
+			funcoes.criar(logfile)
+		if funcoes.existe(logfile) == True:
+			pass
 		if funcoes.existe(arquivo) == True:
 			pass
+
+		dadoslog = arquivolog.data_abertura_programa_principal()
+		arquivolog.adicionar_dados_ao_arquivo(name=logfile,dados=dadoslog)
+
 		print("\033[92m[+] Extensão de arquivo válida!\033[m")
-		time.sleep(1.5)
+		time.sleep(1.3)
 		os.system("clear")
 		print("""\033[94m
  _______  __   __  __   __  _______  _______  __   __ 
