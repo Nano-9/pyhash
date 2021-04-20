@@ -11,18 +11,25 @@ from dados import *
 logar = sys.argv
 
 if len(logar) == 2:
-	
+
+	opcoes_validas = list("ABCDEFX")
 	valido = False
 	arquivo = sys.argv[1]
 
-	print("Verificando se a extensão do arquivo está correta...")
+	print("\033[1;31m[+] Verificando se a extensão do arquivo está correta... [+]\033[m")
 	time.sleep(2)
 	if ".txt" in arquivo:
 		if not funcoes.existe(arquivo):
 			funcoes.criar(arquivo)
+			boas_vindas = "Seja bem vindo ao Pyhash!"
+			for x in boas_vindas:
+				print(x,flush=True,end="")
+				time.sleep(0.1)
+			time.sleep(0.5)
+			os.system("clear")
 		if funcoes.existe(arquivo) == True:
 			pass
-		print("\033[92mExtensão de arquivo válida!\033[m")
+		print("\033[92m[+] Extensão de arquivo válida!\033[m")
 		time.sleep(1.2)
 		os.system("clear")
 		print("""\033[94m
@@ -67,88 +74,93 @@ if len(logar) == 2:
 			palavra_para_senhas = dados
 			palavra_aleatoria_para_senhas = dadoos
 
-			if userop == "A":
-				quantidade_senhas_geradas = 0
-				print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
-				print("\033[1;33m[+] Tempo estimado: 6.0 segundos\033[m")
-				for z in palavra_para_senhas:
-					quantidade_senhas_geradas += 1
-					armazenar = z
-					funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
-
-			elif userop == "B":
-				print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
-				print("\033[1;33m[+] Tempo estimado: 1.5 minutos\033[m")
-				for x in palavra_para_senhas:
+			if userop not in opcoes_validas:
+				print("\033[1;31m[+] >> ATENÇÃO << Parece que o que você digitou não é uma")
+				print("opção válida! Tente novamente...\033[m")
+				sys.exit()
+			else:
+				if userop == "A":
+					quantidade_senhas_geradas = 0
+					print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
+					print("\033[1;33m[+] Tempo estimado: 6.0 segundos\033[m")
 					for z in palavra_para_senhas:
 						quantidade_senhas_geradas += 1
-						armazenar = x+z
+						armazenar = z
 						funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
-			elif userop == "C":
-				print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar um pouco...\033[m\n")
-				print("\033[1;33m[+] Tempo estimado: 7 minutos\033[m")
-				for x in palavra_para_senhas:
-					for z in palavra_para_senhas:
-						for a in palavra_para_senhas:
-							for b in palavra_para_senhas:
-								quantidade_senhas_geradas += 1
-								armazenar = x+z+a+b
-								funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
-				
-			elif userop == "D":
-				print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
-				print("\033[1;33m[+] Tempo estimado: 5 horas {depende do dispositivo}\033[m")	
-				for x in palavra_para_senhas:
-					for z in palavra_para_senhas:
-						for a in palavra_para_senhas:
-							for b in palavra_para_senhas:
-								for c in palavra_para_senhas:
-									for d in palavra_para_senhas:
-										quantidade_senhas_geradas += 1
-										armazenar = x+z+a+b+c+d
-										funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
-				
-			elif userop == "E":
-				print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
-				print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
-				for x in palavra_para_senhas:
-					for z in palavra_para_senhas:
-						for a in palavra_para_senhas:
-							for b in palavra_para_senhas:
-								for c in palavra_para_senhas:
-									for d in palavra_para_senhas:
-										for e in palavra_para_senhas:
-											for f in palavra_para_senhas:
-												quantidade_senhas_geradas += 1
-												armazenar = x+z+a+b+c+d+e+f
-												funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-				print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
-				
-			elif userop == "F":
-				print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
-				time.sleep(1.4)
-				print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
-				for x in palavra_aleatoria_para_senhas:
-					for z in palavra_aleatoria_para_senhas:
-						for a in palavra_aleatoria_para_senhas:
-							for b in palavra_aleatoria_para_senhas:
-								for c in palavra_aleatoria_para_senhas:
-									for d in palavra_aleatoria_para_senhas:
-										quantidade_senhas_geradas += 1
-										armazenar = x+z+a+b+c+d
-										funcoes.adicionar(nomearq=arquivo,password=armazenar)
-				print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-				print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+				elif userop == "B":
+					print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
+					print("\033[1;33m[+] Tempo estimado: 1.5 minutos\033[m")
+					for x in palavra_para_senhas:
+						for z in palavra_para_senhas:
+							quantidade_senhas_geradas += 1
+							armazenar = x+z
+							funcoes.adicionar(nomearq=arquivo,password=armazenar)
+					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+
+				elif userop == "C":
+					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar um pouco...\033[m\n")
+					print("\033[1;33m[+] Tempo estimado: 7 minutos\033[m")
+					for x in palavra_para_senhas:
+						for z in palavra_para_senhas:
+							for a in palavra_para_senhas:
+								for b in palavra_para_senhas:
+									quantidade_senhas_geradas += 1
+									armazenar = x+z+a+b
+									funcoes.adicionar(nomearq=arquivo,password=armazenar)
+					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					
+				elif userop == "D":
+					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
+					print("\033[1;33m[+] Tempo estimado: 5 horas {depende do dispositivo}\033[m")	
+					for x in palavra_para_senhas:
+						for z in palavra_para_senhas:
+							for a in palavra_para_senhas:
+								for b in palavra_para_senhas:
+									for c in palavra_para_senhas:
+										for d in palavra_para_senhas:
+											quantidade_senhas_geradas += 1
+											armazenar = x+z+a+b+c+d
+											funcoes.adicionar(nomearq=arquivo,password=armazenar)
+					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					
+				elif userop == "E":
+					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
+					print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
+					for x in palavra_para_senhas:
+						for z in palavra_para_senhas:
+							for a in palavra_para_senhas:
+								for b in palavra_para_senhas:
+									for c in palavra_para_senhas:
+										for d in palavra_para_senhas:
+											for e in palavra_para_senhas:
+												for f in palavra_para_senhas:
+													quantidade_senhas_geradas += 1
+													armazenar = x+z+a+b+c+d+e+f
+													funcoes.adicionar(nomearq=arquivo,password=armazenar)
+					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					
+				elif userop == "F":
+					print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
+					time.sleep(1.4)
+					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
+					for x in palavra_aleatoria_para_senhas:
+						for z in palavra_aleatoria_para_senhas:
+							for a in palavra_aleatoria_para_senhas:
+								for b in palavra_aleatoria_para_senhas:
+									for c in palavra_aleatoria_para_senhas:
+										for d in palavra_aleatoria_para_senhas:
+											quantidade_senhas_geradas += 1
+											armazenar = x+z+a+b+c+d
+											funcoes.adicionar(nomearq=arquivo,password=armazenar)
+					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 	else:
 		print("A extensão do arquivo não é permitida!")
 else:
