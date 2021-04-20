@@ -11,14 +11,12 @@ def adicionar_dados_ao_arquivo(name,dados):
 	"""
 	try:
 		filelog = open(name, "at")
-	except Exception as e:
-		print("Erro Lucas")
-		print(e)
+	except:
+		print("Erro ao abrir aquivo")
 	else:
 		try:
-			filelog.write("[+] Script iniciado as : {} \n".format(dados))
-		except Exception as er:
-			print("Erro dois lucas")
-			print(er)
+			filelog.write("[+] Script iniciado as : [{}] \n".format(dados[0:8]))
+		except:
+			print("Impossível adicionar dados")
 		else:
 			pass
