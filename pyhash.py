@@ -21,16 +21,21 @@ if len(logar) == 2:
 	if ".txt" in arquivo:
 		if not funcoes.existe(arquivo):
 			funcoes.criar(arquivo)
-			boas_vindas = "Seja bem vindo ao Pyhash!"
-			boas_vindas2 = "Criado por: Lucas-Dk"
+			boas_vindas = "     Seja bem vindo ao Pyhash!"
+			boas_vindas2 = "      Criado por: Lucas-Dk"
+			print("     \033[1;32m[+] MENSAGEM PARA VOCÊ [+]\033[m")
+			print("\033[1;36m{--------------------------------------\033[m")
 			for x in boas_vindas:
-				print("{}".format(x),flush=True,end="")
-				time.sleep(0.1)
+			  print("\033[1;34m{}\033[m".format(x),flush=True,end="")
+			  time.sleep(0.1)
 			print()
 			for w in boas_vindas2:
-				print("{}".format(w),flush=True,end="")
-				time.sleep(0.1)
+			  print("\033[1;34m{}\033[m".format(w),flush=True,end="")
+			  time.sleep(0.1)
+			print("\n\033[1;36m---------------------------------------\033[m}")
 			time.sleep(0.5)
+			print("\n\033[1;91m[+] Deletando mensagem....\033[m")
+			time.sleep(1.3)
 			os.system("clear")
 		if funcoes.existe(arquivo) == True:
 			pass
@@ -180,4 +185,6 @@ no lugar de senha.txt você pode colocar o nome que
 desejar, desde que a extensão seja .txt
 
 faça bom uso :)
-	""")
+ """)
+
+# by: lucas-DK
