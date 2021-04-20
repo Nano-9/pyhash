@@ -81,14 +81,14 @@ if len(logar) == 2:
 			else:
 				if userop == "A":
 					quantidade_senhas_geradas = 0
-					print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
+					print("\n\033[1;31m[+] Gerando as suas senhas...\033[m\n")
 					print("\033[1;33m[+] Tempo estimado: 6.0 segundos\033[m")
 					for z in palavra_para_senhas:
 						quantidade_senhas_geradas += 1
 						armazenar = z
 						funcoes.adicionar(nomearq=arquivo,password=armazenar)
-					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					print("\n\033[32m[+] Status do arquivo \033[35m{}\033[m: \033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
 				elif userop == "B":
 					print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
@@ -98,8 +98,8 @@ if len(logar) == 2:
 							quantidade_senhas_geradas += 1
 							armazenar = x+z
 							funcoes.adicionar(nomearq=arquivo,password=armazenar)
-					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					print("\n\033[32m[+] Status do arquivo \033[35m{}\033[m: \033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
 				elif userop == "C":
 					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar um pouco...\033[m\n")
@@ -111,8 +111,8 @@ if len(logar) == 2:
 									quantidade_senhas_geradas += 1
 									armazenar = x+z+a+b
 									funcoes.adicionar(nomearq=arquivo,password=armazenar)
-					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					print("\n\033[32m[+] Status do arquivo \033[35m{}\033[m: \033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 					
 				elif userop == "D":
 					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
@@ -126,8 +126,8 @@ if len(logar) == 2:
 											quantidade_senhas_geradas += 1
 											armazenar = x+z+a+b+c+d
 											funcoes.adicionar(nomearq=arquivo,password=armazenar)
-					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					print("\n\033[32m[+] Status do arquivo \033[35m{}\033[m: \033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 					
 				elif userop == "E":
 					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
@@ -143,8 +143,8 @@ if len(logar) == 2:
 													quantidade_senhas_geradas += 1
 													armazenar = x+z+a+b+c+d+e+f
 													funcoes.adicionar(nomearq=arquivo,password=armazenar)
-					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
-					print("\033[32mQuantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
+					print("\n\033[32m[+] Status do arquivo \033[35m{}\033[m: \033[1;36mConcluído\033[m".format(arquivo))
+					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 					
 				elif userop == "F":
 					print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
@@ -159,7 +159,7 @@ if len(logar) == 2:
 											quantidade_senhas_geradas += 1
 											armazenar = x+z+a+b+c+d
 											funcoes.adicionar(nomearq=arquivo,password=armazenar)
-					print("\033[32m[+] Status do arquivo\033[35m{}\033[m:\033[1;36mConcluído\033[m".format(arquivo))
+					print("\n\033[32m[+] Status do arquivo \033[35m{}\033[m: \033[1;36mConcluído\033[m".format(arquivo))
 					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 	else:
 		print("A extensão do arquivo não é permitida!")
