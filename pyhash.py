@@ -12,7 +12,7 @@ from dados import *
 logar = sys.argv
 
 if len(logar) == 2:
-
+	os.system("clear")
 	opcoes_validas = list("ABCDEFX")
 	valido = False
 	arquivo = sys.argv[1]
