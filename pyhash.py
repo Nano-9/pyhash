@@ -47,7 +47,8 @@ if len(logar) == 2:
 			pass
 
 		dadoslog = arquivolog.data_abertura_programa_principal()
-		arquivolog.adicionar_dados_ao_arquivo(name=logfile,dados=dadoslog)
+		print(dadoslog)
+		#arquivolog.adicionar_dados_ao_arquivo(name=logfile,dados=dadoslog)
 
 		print("\033[92m[+] Extensão de arquivo válida!\033[m")
 		time.sleep(5)
