@@ -16,21 +16,26 @@ if len(logar) == 2:
 	valido = False
 	arquivo = sys.argv[1]
 
-	print("\033[1;31m[+] Verificando se a extensão do arquivo está correta... [+]\033[m")
-	time.sleep(2)
+	print("\033[1;31m[+] Verificando se a extensão do arquivo está correta...\033[m")
+	time.sleep(2.5)
 	if ".txt" in arquivo:
 		if not funcoes.existe(arquivo):
 			funcoes.criar(arquivo)
 			boas_vindas = "Seja bem vindo ao Pyhash!"
+			boas_vindas2 = "Criado por: Lucas-Dk"
 			for x in boas_vindas:
-				print(x,flush=True,end="")
+				print("{}".format(x),flush=True,end="")
+				time.sleep(0.1)
+			print()
+			for w in boas_vindas2:
+				print("{}".format(w),flush=True,end="")
 				time.sleep(0.1)
 			time.sleep(0.5)
 			os.system("clear")
 		if funcoes.existe(arquivo) == True:
 			pass
 		print("\033[92m[+] Extensão de arquivo válida!\033[m")
-		time.sleep(1.2)
+		time.sleep(1.5)
 		os.system("clear")
 		print("""\033[94m
  _______  __   __  __   __  _______  _______  __   __ 
