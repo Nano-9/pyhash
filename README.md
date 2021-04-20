@@ -5,7 +5,7 @@
 
 > Como usar?
 
-- git clone https://github.com/lucas-Dk/geradorsenhas
+- git clone https://github.com/lucas-Dk/pyhash
 
 - python pyhash.py wordlist.txt
 
