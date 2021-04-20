@@ -1,4 +1,4 @@
-# geradorsenhas
+# Pyhash
 
 > Script para gerar senhas
 - Gera milhões de senhas levando em conta as sílabas desejadas
