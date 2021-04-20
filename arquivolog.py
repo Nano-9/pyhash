@@ -1,14 +1,14 @@
 # arquivo de log que mostra o ano o dia e a hora que o usuário está rodando o script principal
 
 import datetime
-import time
+
 
 def data_abertura_programa_principal():
 	"""
 	data : Armazena a hora certa que o arquivo foi aberto
 	pelo usuário
 	"""
-	data = str(datetime.datetime.now().time())
+	data = datetime.datetime.now().time()
 
 
 def adicionar_dados_ao_arquivo(name,dados):
