@@ -46,7 +46,7 @@ if len(logar) == 2:
 		if funcoes.existe(arquivo) == True:
 			pass
 
-		dadoslog = arquivolog.data_abertura_programa_principal()
+		dadoslog = arquivolog.data
 		print(dadoslog)
 		#arquivolog.adicionar_dados_ao_arquivo(name=logfile,dados=dadoslog)
 
