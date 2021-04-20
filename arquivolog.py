@@ -23,7 +23,7 @@ def adicionar_dados_ao_arquivo(name,dados):
 		print(e)
 	else:
 		try:
-			filelog.write("[+] Script iniciado as : {} \n".format(dados[0:8]))
+			filelog.write("[+] Script iniciado as : {} \n".format(dados))
 		except Exception as er:
 			print("Erro dois lucas")
 			print(er)
