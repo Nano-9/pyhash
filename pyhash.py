@@ -23,7 +23,7 @@ if len(logar) == 2:
 			funcoes.criar(arquivo)
 			boas_vindas = "     Seja bem vindo ao Pyhash!"
 			boas_vindas2 = "      Criado por: Lucas-Dk"
-			print("     \033[1;32m[+] MENSAGEM PARA VOCÊ [+]\033[m")
+			print("     \n\033[1;32m[+] MENSAGEM PARA VOCÊ [+]\033[m")
 			print("\033[1;36m{--------------------------------------\033[m")
 			for x in boas_vindas:
 			  print("\033[1;34m{}\033[m".format(x),flush=True,end="")
@@ -101,7 +101,7 @@ if len(logar) == 2:
 					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
 				elif userop == "B":
-					print("\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
+					print("\n\033[1;31m[+] Gerando as suas senhas... [+]\033[m\n")
 					print("\033[1;33m[+] Tempo estimado: 1.5 minutos\033[m")
 					for x in palavra_para_senhas:
 						for z in palavra_para_senhas:
@@ -112,7 +112,7 @@ if len(logar) == 2:
 					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 
 				elif userop == "C":
-					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar um pouco...\033[m\n")
+					print("\n\033[1;31m[+] Gerando as suas senhas, este processo pode demorar um pouco...\033[m\n")
 					print("\033[1;33m[+] Tempo estimado: 7 minutos\033[m")
 					for x in palavra_para_senhas:
 						for z in palavra_para_senhas:
@@ -125,7 +125,7 @@ if len(logar) == 2:
 					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 					
 				elif userop == "D":
-					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
+					print("\n\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
 					print("\033[1;33m[+] Tempo estimado: 5 horas {depende do dispositivo}\033[m")	
 					for x in palavra_para_senhas:
 						for z in palavra_para_senhas:
@@ -140,7 +140,7 @@ if len(logar) == 2:
 					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 					
 				elif userop == "E":
-					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
+					print("\n\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
 					print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
 					for x in palavra_para_senhas:
 						for z in palavra_para_senhas:
@@ -157,9 +157,9 @@ if len(logar) == 2:
 					print("\033[32m[+] Quantidade de senhas no arquivo:\033[m {}".format(quantidade_senhas_geradas))
 					
 				elif userop == "F":
-					print("\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
+					print("\n\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
 					time.sleep(1.4)
-					print("\033[1;31m[+] Gerando as suas senhas, este processo pode demorar...\033[m\n")
+					print("\n\033[1;33m[+] Tempo estimado: 6 horas {depende do dispositivo}\033[m")
 					for x in palavra_aleatoria_para_senhas:
 						for z in palavra_aleatoria_para_senhas:
 							for a in palavra_aleatoria_para_senhas:
