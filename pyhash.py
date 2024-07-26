@@ -1,5 +1,5 @@
 # criador de senhas em python
-# by: lucas-DK 
+# by: Nano-9
 import sys
 import os
 import time
