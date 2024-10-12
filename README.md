@@ -5,7 +5,7 @@
 
 > Como usar?
 
-- git clone https://github.com/lucas-Dk/pyhash
+- git clone https://github.com/nano-9/pyhash
 
 - python pyhash.py wordlist.txt
 
