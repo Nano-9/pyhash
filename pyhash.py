@@ -197,4 +197,4 @@ desejar, desde que a extensão seja .txt
 faça bom uso :)
  """)
 
-# by: lucas-DK
+# by: nano-9
