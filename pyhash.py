@@ -63,7 +63,7 @@ if len(logar) == 2:
                                                                     
 > versão 1.0
 > coded by: lucas-DK
-> meu github: https://github.com/lucas-Dk
+> meu github: https://github.com/nano-9
 
 
 ==================== MENU =======================\n
