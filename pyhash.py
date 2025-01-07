@@ -24,7 +24,7 @@ if len(logar) == 2:
 		if not funcoes.existe(arquivo):
 			funcoes.criar(arquivo)
 			boas_vindas = "     Seja bem vindo ao Pyhash!"
-			boas_vindas2 = "      Criado por: Lucas-Dk"
+			boas_vindas2 = "      Criado por: Nano"
 			print("     \n\033[1;32m[+] MENSAGEM PARA VOCÊ [+]\033[m")
 			print("\033[1;36m{--------------------------------------\033[m")
 			for x in boas_vindas:
